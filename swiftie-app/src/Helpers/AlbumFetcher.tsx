@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import InfoCard from '../Components/InfoCard/InfoCard';
+import Button from '../Components/Button/Button';
 
 function Fetcher () {
   const [data = [
@@ -22,9 +24,15 @@ function Fetcher () {
   }, [])
   return (
     <div className='App'>
-      {
-        data && data.length > 0 && data.map((albums) => <p key = {albums.album_id}> {albums.title} ({albums.release_date}) </p>)
-      }
+      <div className="album-container">
+        {
+          data && data.length > 0 && data.map(
+            (albums) => <Button
+              id={albums.album_id}
+              label={albums.title}/>
+          )
+        }
+      </div>
     </div>
   );
 }
