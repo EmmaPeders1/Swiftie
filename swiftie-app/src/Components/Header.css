@@ -1,0 +1,25 @@
+.header {
+  background: #52316b;
+  height: 80px;
+  width: 100%;
+  color: #e2b7ce;
+  position: sticky;
+  display: flex;
+  flex-flow: column wrap;
+  top: 0;
+  justify-content: center;
+  z-index: 2;
+}
+
+#headerText {
+  padding: 1px;
+  font-size: 60px;
+  margin-left: 40px;
+  align-self: flex-start;
+}
+
+@media (max-width: 600px) {
+  #headerText {
+    font-size: 35px;
+  }
+}
