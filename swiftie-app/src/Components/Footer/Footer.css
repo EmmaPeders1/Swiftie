@@ -1,0 +1,17 @@
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #db7ca5;
+  color: #52316b;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+a{
+  margin: 0;
+}

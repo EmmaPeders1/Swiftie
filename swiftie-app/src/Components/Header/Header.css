@@ -13,13 +13,20 @@
 
 #headerText {
   padding: 1px;
-  font-size: 60px;
-  margin-left: 40px;
+  font-size: 50px;
   align-self: flex-start;
+  position: fixed;
+  margin-left: 80px;
 }
 
 @media (max-width: 600px) {
   #headerText {
     font-size: 35px;
   }
+}
+
+img{
+  margin-left: 5px;
+  height: 70px;
+  width: 70px;
 }

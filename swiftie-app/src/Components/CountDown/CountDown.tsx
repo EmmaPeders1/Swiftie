@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import "./CountDown.css";
 
 const Countdown: React.FC = () => {
-  const targetDate = new Date("June 7, 2023 00:00:00");
+  const targetDate = new Date("July 7, 2023 00:00:00");
   const [countdown, setCountdown] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
@@ -39,10 +38,7 @@ const Countdown: React.FC = () => {
       {countdown.days < 0 ? (
         <div>
           <h2>The album is released! <br></br>
-            Stream on
-            <a href="https://music.apple.com/us/album/speak-now-taylors-version/1690839749">Apple Music</a>
-            or
-            <a href="https://open.spotify.com/album/1fnJ7k0bllNfL1kVdNVW1A?si=81oyFruIQJK5OnJZ7y3hfA">Spotify</a>
+            Stream on <a href="https://music.apple.com/us/album/speak-now-taylors-version/1690839749">Apple Music</a> or <a href="https://open.spotify.com/album/1fnJ7k0bllNfL1kVdNVW1A?si=81oyFruIQJK5OnJZ7y3hfA">Spotify</a>
           </h2>
         </div>
       ) : (

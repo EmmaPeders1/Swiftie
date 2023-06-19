@@ -1,5 +1,6 @@
 import './App.css';
 import Countdown from './Components/CountDown/CountDown';
+import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
 import { Fetcher } from './Helpers/AlbumFetcher';
 
@@ -13,6 +14,7 @@ function App() {
       </h1>
       <Countdown />
       <Fetcher />
+      <Footer />
     </div>
   );
 }
