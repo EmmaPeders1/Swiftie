@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import InfoCard from '../Components/InfoCard/InfoCard';
-import Button from '../Components/Button/Button';
+import React, { useState, useEffect, } from 'react';
+import './AlbumFetcher.css';
+import { NavLink } from 'react-router-dom';
 
-function Fetcher () {
+
+function AlbumFetcher () {
+
   const [data = [
     {
       album_id: "album_id",
@@ -24,12 +26,17 @@ function Fetcher () {
   }, [])
   return (
     <div className='App'>
+      <h1>Check out her discography:</h1>
       <div className="album-container">
         {
           data && data.length > 0 && data.map(
-            (albums) => <Button
-              id={albums.album_id}
-              label={albums.title}/>
+            (albums) =>
+            <div className='navlink-div'>
+              <NavLink
+              key={albums.album_id}
+              id="navlink"
+              to={`/${(albums.title).replace(/\s/g, "")}`}> {albums.title}</NavLink>
+            </div>
           )
         }
       </div>
@@ -37,4 +44,4 @@ function Fetcher () {
   );
 }
 
-export { Fetcher }
+export { AlbumFetcher }

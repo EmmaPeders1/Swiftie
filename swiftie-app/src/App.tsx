@@ -1,22 +1,26 @@
-import './App.css';
-import Countdown from './Components/CountDown/CountDown';
-import Footer from './Components/Footer/Footer';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { RecoilRoot } from 'recoil';
 import Header from './Components/Header/Header';
-import { Fetcher } from './Helpers/AlbumFetcher';
+import Footer from './Components/Footer/Footer';
+import Home from './Pages/Home';
+import TaylorSwift from './Pages/TaylorSwift';
+import Red from './Pages/Red';
+import './App.css';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <Header />
-      <h1>Time left until the release of
-        <br></br>
-        <i>Speak Now (Taylor's Version)</i>:
-      </h1>
-      <Countdown />
-      <Fetcher />
-      <Footer />
-    </div>
+    <RecoilRoot>
+      <div className="App">
+        <Router>
+          <Header />
+          <Footer />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/taylorSwift' element={<TaylorSwift />} />
+            <Route path='/red' element={<Red />} />
+          </Routes>
+        </Router>
+      </div>
+    </RecoilRoot>
   );
 }
-
-export default App;

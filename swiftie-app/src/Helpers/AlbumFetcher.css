@@ -1,0 +1,42 @@
+.album-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto 0 auto;
+  justify-content: center;
+  width: 90%;
+  gap: 30px;
+  padding-bottom: 30px;
+}
+
+.album-container .album-div {
+  flex: 1 0 calc(25%-10px);
+}
+
+.navlink-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 0.4rem 1rem;
+  border-radius: 10px;
+  font-size: 18px;
+  width: max-content;
+  height: 56px;
+  background: #52316b;
+  border: 1.5px solid #fff;
+  color: rgb(255, 255, 255);
+  white-space: nowrap;
+}
+
+.navlink-div:focus:not(:disabled),
+.navlink-div:hover:not(:disabled) {
+  background: #632e6d;
+  border: 1.5px solid #52316b;
+}
+
+#navlink{
+  color: #e2b7ce;
+  text-decoration: none;
+}
+

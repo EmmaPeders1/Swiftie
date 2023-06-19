@@ -43,6 +43,10 @@ const Countdown: React.FC = () => {
         </div>
       ) : (
         <div>
+          <h1>Time left until the release of
+            <br></br>
+            <i>Speak Now (Taylor's Version)</i>:
+          </h1>
           <h2>{countdown.days} days {countdown.hours} hours {countdown.minutes} minutes {countdown.seconds} seconds</h2>
           <br></br>
         </div>
