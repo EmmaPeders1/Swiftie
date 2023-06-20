@@ -1,12 +1,12 @@
+import { NavLink } from 'react-router-dom';
 import './Header.css';
 
-/**
- * A Funtional component that contains the header
- */
 function Header() {
   return (
     <div className="header" aria-label="header">
-      <img src="logolight100.png"></img>
+      <NavLink className="navlink" to="/" end>
+        <img src="logolight100.png"></img>
+      </NavLink>
       <h1 id="headerText">Swiftie </h1>
     </div>
   );

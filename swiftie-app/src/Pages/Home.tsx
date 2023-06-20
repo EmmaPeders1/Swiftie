@@ -1,5 +1,5 @@
 import Countdown from "../Components/CountDown/CountDown";
-import { AlbumFetcher } from "../Helpers/AlbumFetcher";
+import { AlbumFetcher } from "../Fetcher/AlbumFetcher";
 
 export default function Home(){
   return(

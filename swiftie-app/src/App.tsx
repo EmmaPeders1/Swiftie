@@ -3,8 +3,7 @@ import { RecoilRoot } from 'recoil';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import Home from './Pages/Home';
-import TaylorSwift from './Pages/TaylorSwift';
-import Red from './Pages/Red';
+import AlbumPage from './Pages/AlbumPage';
 import './App.css';
 
 export default function App() {
@@ -16,8 +15,7 @@ export default function App() {
           <Footer />
           <Routes>
             <Route path='/' element={<Home />} />
-            <Route path='/taylorSwift' element={<TaylorSwift />} />
-            <Route path='/red' element={<Red />} />
+            <Route path=":id" element={<AlbumPage />} />
           </Routes>
         </Router>
       </div>

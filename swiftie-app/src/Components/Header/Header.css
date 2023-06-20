@@ -1,3 +1,10 @@
+.navlink{
+  color: #e2b7ce;
+  text-decoration: none;
+  justify-content: left;
+  position: fixed;
+}
+
 .header {
   background: #52316b;
   height: 80px;
